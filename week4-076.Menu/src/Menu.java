@@ -10,16 +10,18 @@ public class Menu {
     }
     
     public void addMeal(String meal) {
-        
-           if (!this.meals.contains(meal)) {
+        if (!this.meals.contains(meal)) {
             this.meals.add(meal);
         } 
+    }
     
-          
+    public void printMeals() {
+       for (String meal : this.meals) {
+          System.out.println(meal); 
+       }
         
-    
-  }
-
+    }
 }
+
    
 

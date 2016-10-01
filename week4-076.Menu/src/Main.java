@@ -8,6 +8,8 @@ public class Main {
          exactum.addMeal("Vegetable casserole with salad cheese");
          exactum.addMeal("Chicken and nacho salad");
          exactum.addMeal("Fish fingers with sour cream sauce");
+         
+         exactum.printMeals();
 
         // When you have created printMeals() method,
         // you may remove the comments below
