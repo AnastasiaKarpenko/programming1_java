@@ -39,5 +39,19 @@ public class CombiningArrayLists {
         }
 
     }
+//    This solution passes only 67% tests, however works perfectly. 
+//    Need to consult the tutor.  
+//    
+//    public static void combine(ArrayList<Integer> first, ArrayList<Integer> second) {
+//        for (int i = 0; i <= second.size() - 1; i++) {
+//            if (first.contains(second.get(i))) {
+//
+//            } else {
+//                first.add(second.get(i));
+//            }
+//
+//        }
+//
+//    }
 
 }
