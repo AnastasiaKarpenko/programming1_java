@@ -11,7 +11,7 @@ public class DecreasingCounter {
     }
 
     public void decrease() {
-        // write here code to decrease counter value by one
+        this.value--;
     }
 
     // and here the rest of the methods
