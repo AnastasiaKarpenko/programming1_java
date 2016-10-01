@@ -20,6 +20,6 @@ public class Product {
     }
     
     public void printProduct () {
-        System.out.println(name + " , price " + price + " , amount " + amount);
+        System.out.println(this.name + " , price " + this.price + " , amount " + this.amount);
     }
 }
