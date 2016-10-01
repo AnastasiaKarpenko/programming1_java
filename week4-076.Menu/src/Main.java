@@ -10,6 +10,11 @@ public class Main {
          exactum.addMeal("Fish fingers with sour cream sauce");
          
          exactum.printMeals();
+         exactum.printMeals();
+         
+         exactum.clearMenu();
+         
+         exactum.printMeals();
 
         // When you have created printMeals() method,
         // you may remove the comments below
