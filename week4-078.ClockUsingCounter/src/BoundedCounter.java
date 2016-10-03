@@ -35,4 +35,15 @@ public class BoundedCounter {
         }
         
     }
+    
+    public int getValue () {
+        return this.value;
+    }
+    
+    public void setValue (int newValue) {
+        if ((newValue > 0) && (newValue <= this.upperLimit) ) {
+            this.value = newValue;
+        }
+       
+    }
 }
