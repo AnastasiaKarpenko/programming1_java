@@ -17,7 +17,7 @@ public class LyyraCard {
     }
     
     public String toString () {
-        return "The card has " + this.balance + " X euros";
+        return "The card has " + this.balance + " euros";
     }
     
     public void payEconomical() {
@@ -34,7 +34,7 @@ public class LyyraCard {
     } 
     
     public void loadMoney(double amount) {
-        if (amount >= 0) {
+        if (amount > 0) {
            this.balance += amount;
             if (this.balance > 150) {
             this.balance = 150;
