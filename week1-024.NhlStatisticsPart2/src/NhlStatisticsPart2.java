@@ -26,7 +26,6 @@ public class NhlStatisticsPart2 {
                 NHLStatistics.top(10);
 
             } else if (command.equals("assists")) {
-                System.out.println(command);
                 NHLStatistics.sortByAssists();
                 NHLStatistics.top(10);
             } else if (command.equals("penalties")) {
@@ -41,9 +40,8 @@ public class NhlStatisticsPart2 {
             } else if (command.equals("club")) {
                 System.out.println("Which club:");
                 String club = reader.nextLine();
+                NHLStatistics.sortByPoints();     
                 NHLStatistics.teamStatistics(club);
-                NHLStatistics.sortByPoints();
-                NHLStatistics.top(10);
                 
             }
 
