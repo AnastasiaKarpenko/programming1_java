@@ -5,7 +5,7 @@ public class LotteryNumbers {
     private ArrayList<Integer> numbers;
 
     public LotteryNumbers() {
-        // Draw numbers as LotteryNumbers is created
+        
         this.drawNumbers();
     }
 

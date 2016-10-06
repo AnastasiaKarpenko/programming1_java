@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         
         BoundedCounter seconds = new BoundedCounter(59);
@@ -20,16 +20,19 @@ public class Main {
         minutes.setValue(m);
         hours.setValue(h);
 
-        while ( true ) {
+        int i = 0;
+        while ( i < 121 ) {
             System.out.println(hours + ":" + minutes + ":" + seconds);
-            Thread.sleep(1000);            
+//            Thread.sleep(1000);            
             seconds.next();
             if (seconds.getValue() == 0) {
                 minutes.next();
                 if (minutes.getValue() == 0) {
                     hours.next();
                 }
+                
             }
+            i++;
         }
     }
 }
