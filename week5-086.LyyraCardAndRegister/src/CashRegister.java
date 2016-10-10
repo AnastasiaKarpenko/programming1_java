@@ -46,4 +46,42 @@ public class CashRegister {
     public String toString() {
         return "money in register " + cashInRegister + " economical lunches sold: " + economicalSold + " gourmet lunches sold: " + gourmetSold;
     }
+    
+     public boolean payEconomical(LyyraCard card) {
+        // the price of the economical lunch is 2.50 euros
+        // if the balance of the card is at least the price of the lunch:
+        //    the amount of sold lunches is incremented by one
+        //    the method returns true
+        // if not, the method returns false
+        if (card.pay(2.5)) {
+            this.economicalSold++;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean payGourmet(LyyraCard card) {
+        // the price of the gourmet lunch is 4.00 euros
+        // if the balance of the card is at least the price of the lunch:
+        //    the amount of sold lunches is incremented by one
+        //    the method returns true
+        // if not, the method returns false
+        if (card.pay(4.0)) {
+            this.gourmetSold++;
+            return true;
+        } else {
+            return false;
+        }
+    }
+        
+    public void loadMoneyToCard(LyyraCard card, double sum) {
+            if (sum > 0) {
+                card.loadMoney(sum);
+                this.cashInRegister += sum;
+            }
+        }
+   
+
+    
 }
