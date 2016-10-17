@@ -51,7 +51,13 @@ public class MyDate {
             this.advance();
             i++;
         }
-        
+
+    }
+    
+    public MyDate afterNumberOfDays(int days) {
+        MyDate newMyDate = new MyDate (this.day, this.month, this.year);
+        newMyDate.advance(days);
+        return newMyDate;
     }
 
 }
