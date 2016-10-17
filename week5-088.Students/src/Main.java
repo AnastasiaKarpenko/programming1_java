@@ -29,5 +29,18 @@ public class Main {
             System.out.println(student);
         }
         
+        System.out.println("Give search term: ");
+        String searchTerm = reader.nextLine();
+        
+        System.out.println("Result: ");
+        
+        for(Student student : list) {
+            if (student.getName().contains(searchTerm)) {
+                System.out.println(student);
+            } 
+        }
+        
     }
+    
+        
 }
