@@ -10,7 +10,8 @@ public class Money {
             euros += cents / 100;
             cents %= 100;
         }
-
+        
+       
         this.euros = euros;
         this.cents = cents;
     }
@@ -45,6 +46,25 @@ public class Money {
             return true;
         }
         return false;
+    }
+    
+    public Money minus(Money decremented) {
+
+        if (this.less(decremented)) {
+            int eurosNew = 0;
+            int centsNew = 0;
+
+            return new Money(eurosNew, centsNew);
+        } else {
+            int eurosNew = this.euros - decremented.euros;
+            int centsNew = this.cents - decremented.cents;
+            if (this.cents < decremented.cents) {
+                eurosNew--;
+                centsNew = 100 - decremented.cents;
+            }
+
+            return new Money(eurosNew, centsNew);
+        }
     }
 
 }
