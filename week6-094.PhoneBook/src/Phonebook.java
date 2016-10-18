@@ -31,4 +31,14 @@ public class Phonebook {
         
     }
     
+    public String searchNumber(String name) {
+        for (Person person : phonebook) {
+            if (person.getName().equals(name)) {
+                return person.getNumber();
+            }
+            
+        } 
+        return "number not known";
+    }
+    
 }
