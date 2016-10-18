@@ -37,5 +37,14 @@ public class Money {
         Money money = new Money(this.euros + added.euros, this.cents + added.cents);
         return money;        
     }
+    
+    public boolean less(Money compared) {
+        if (this.euros < compared.euros) {
+            return true;
+        }else if (this.euros == compared.euros && this.cents < compared.cents) {
+            return true;
+        }
+        return false;
+    }
 
 }
