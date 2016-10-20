@@ -46,6 +46,7 @@ public class NightSky {
     }
     
     public void print () {
+        this.starsInLastPrint = 0;
         for (int i = 0; i< this.height; i++) {
             this.printLine();
         }
