@@ -10,7 +10,7 @@ public class Main {
     public static int sum(int[] array) {
         int sum = 0;
         for (int number : array) {
-            sum+= number;
+            sum += number;
         }
         return sum;
     }
