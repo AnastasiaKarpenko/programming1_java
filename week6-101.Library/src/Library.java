@@ -33,7 +33,7 @@ public class Library {
     public ArrayList<Book> searchByTitle(String title) {
         ArrayList<Book>found = new ArrayList<Book>();
         for (Book book : this.collection) {
-            if (book.title().contains(title)) {
+            if (StringUtils.included(book.title(), title)) {
                 found.add(book);
             }
         }
@@ -43,7 +43,7 @@ public class Library {
     public ArrayList<Book> searchByPublisher(String publisher) {
         ArrayList<Book>found = new ArrayList<Book>();
         for (Book book : this.collection) {
-            if (book.publisher().contains(publisher)) {
+            if (StringUtils.included(book.publisher(), publisher)) {
                 found.add(book);
             }
         }
