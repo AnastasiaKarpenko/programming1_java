@@ -25,12 +25,6 @@ public class GuessingGame {
         }
         System.out.println("The number you're thinking of is " + lowerLimit);        
         
-        
-            
-        
-        
-        
-
     }
 
     // implement here the methods isGreaterThan and average
