@@ -13,6 +13,7 @@ public class GuessingGame {
         instructions(lowerLimit, upperLimit);
 
         // write the guessing logic here
+        
 
     }
 
@@ -35,5 +36,15 @@ public class GuessingGame {
 
         // Below we swap the base number to base two logarithms!
         return (int) (Math.log(number) / Math.log(2)) + 1;
+    }
+    
+    public boolean isGreaterThan(int value) {
+        System.out.println("Is your number greater than " + value + " (y/n)");
+        String answer = this.reader.nextLine();
+        if (answer.equals("n")) {
+            return false;
+        } 
+        return true;
+        
     }
 }
