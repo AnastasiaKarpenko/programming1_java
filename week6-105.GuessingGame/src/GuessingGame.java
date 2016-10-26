@@ -14,6 +14,22 @@ public class GuessingGame {
 
         // write the guessing logic here
         
+       
+        while (!(lowerLimit == upperLimit)) {
+            if (isGreaterThan (average(lowerLimit, upperLimit))) {
+                lowerLimit = average(lowerLimit, upperLimit) + 1;
+            } else {
+                upperLimit = average(lowerLimit, upperLimit);
+            }
+        
+        }
+        System.out.println("The number you're thinking of is " + lowerLimit);        
+        
+        
+            
+        
+        
+        
 
     }
 
