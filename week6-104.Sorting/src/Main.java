@@ -1,19 +1,12 @@
 
 import java.util.Arrays;
 
-
 public class Main {
 
     public static void main(String[] args) {
-        int[] values = {3, 2, 5, 4, 8};
-
-        System.out.println(Arrays.toString(values));
-
-        swap(values, 1, 0);
-        System.out.println(Arrays.toString(values));
-
-        swap(values, 0, 3);
-        System.out.println(Arrays.toString(values));
+        int[] values = {8, 3, 7, 9, 1, 2, 4};
+        sort(values);
+        
 
     }
 
@@ -59,6 +52,15 @@ public class Main {
         int temporary = array[index1];
         array[index1] = array[index2];
         array[index2] = temporary;
+    }
+
+    public static void sort(int[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            int theIndexOfTheSmallest = indexOfTheSmallestStartingFrom(array, i);
+            swap(array, i, theIndexOfTheSmallest);
+            System.out.println(Arrays.toString(array));
+        }
+
     }
 
 }
