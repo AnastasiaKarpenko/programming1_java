@@ -1,11 +1,19 @@
 
+import java.util.Arrays;
+
+
 public class Main {
 
     public static void main(String[] args) {
-        int[] values = {-1, 6, 9, 8, 12};
-        System.out.println(indexOfTheSmallestStartingFrom(values, 1));
-        System.out.println(indexOfTheSmallestStartingFrom(values, 2));
-        System.out.println(indexOfTheSmallestStartingFrom(values, 4));
+        int[] values = {3, 2, 5, 4, 8};
+
+        System.out.println(Arrays.toString(values));
+
+        swap(values, 1, 0);
+        System.out.println(Arrays.toString(values));
+
+        swap(values, 0, 3);
+        System.out.println(Arrays.toString(values));
 
     }
 
@@ -34,7 +42,7 @@ public class Main {
     }
 
     public static int indexOfTheSmallestStartingFrom(int[] array, int index) {
-    // write the code here
+        // write the code here
         int smallest = array[index];
         int indexOfSmallest = index;
         for (int i = index; i < array.length; i++) {
@@ -44,6 +52,13 @@ public class Main {
             }
         }
         return indexOfSmallest;
+    }
+
+    public static void swap(int[] array, int index1, int index2) {
+        // code goes here
+        int temporary = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temporary;
     }
 
 }
