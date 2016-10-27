@@ -65,7 +65,9 @@ public class BirdDatabase {
     public void printBird(String name) {
         for (Bird bird : birds) {
             if (bird.getName().equals(name)) {
-               System.out.println(bird.toString() + this.countObservations(bird) + "observations");
+                System.out.println(bird.toString() + this.countObservations(bird));
+
+//                System.out.println(bird.toString() + this.countObservations(bird) + "observations");
             }
         }
         
