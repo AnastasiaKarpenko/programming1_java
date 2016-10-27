@@ -12,6 +12,11 @@ import java.util.Scanner;
  *
  * @author anastasia
  */
+
+/* TASK: The user inputs the words until empty string . 
+ * You need to print the largest word out of all input.
+ */
+
 public class Application2 {
 
     public static void main(String args[]) {
@@ -74,8 +79,4 @@ public class Application2 {
         String longestWord = list.get(number);
             return longestWord;
     }
-    
-    
-    
-      
 }
