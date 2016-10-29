@@ -39,6 +39,8 @@ public class Main {
                 database.printBird(name);                
             } else if (choice.equals("Quit")) {
                 break;
+            } else {
+                System.out.println("There is not such command in the menu. Try again");
             }
             
         }
