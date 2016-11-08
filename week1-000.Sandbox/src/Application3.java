@@ -15,7 +15,7 @@ public class Application3 {
         System.out.println("Please insert the quantity of numbers: ");
         int quantity = reader.nextInt();
         int[] numbers = addNumbers(quantity, reader);
-        System.out.println(Arrays.toString(numbers));
+//        System.out.println(Arrays.toString(numbers));
 
     }
 
@@ -33,5 +33,7 @@ public class Application3 {
         }
         return array;
     }
+    
+    
 
 }
